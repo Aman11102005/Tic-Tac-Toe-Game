@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="firstPage">
+      <h1>TIC TAC TOE</h1>
+        <div class="TTimage">
+        <img class="TTTimage image" src="Assets/tic_tac_toe_512x512.png"  alt="">
+      </div>
+
+      <button class="playGame" onclick="myFunction()">Play Game</button>
+
+      <p class="footerLine"><b> Made with ❤️ by Aman Jaiswal</b></p>
+    </div>
+
+    <div class="secondPage hide">
+      <div class="footer">
+        <div class="playerX player">Player X</div>
+        
+        <div class="playerO player">Player O</div>
+      </div>
+      <div class="draw22">
+        <div class="draw2">DRAW</div>
+      </div>
+
+      <div class="msg-container hide">
+        
+        <p id="msg">Winner</p>
+        <br /><br />
+        <button class="new">New Game</button>
+      </div>
+
+      <div class="main">
+        <!-- <h1>TIC TAC TOE</h1> -->
+        <div class="container">
+          <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+          </div>
+        </div>
+        <br>
+        <button class="refresh" ondblclick="window.location.reload();">
+          Reset
+        </button>
+        <button class="reset">Restart</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
